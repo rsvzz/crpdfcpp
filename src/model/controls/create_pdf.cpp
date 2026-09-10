@@ -1,0 +1,31 @@
+#include <crpdfcpp/controls/create_pdf.hpp>
+#include <cairo/cairo-pdf.h>
+#include <string>
+#include <iostream>
+
+using namespace controls;
+
+CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), height(h)
+{
+    surface = cairo_pdf_surface_create(path.c_str(), width, height);
+
+    if (cairo_surface_status(surface) != CAIRO_STATUS_SUCCESS)
+    {
+        std::cout << "Error dont create surface" << std::endl;
+    }
+    else
+    {
+        ctx = cairo_create(surface);
+        if (cairo_status(ctx) != CAIRO_STATUS_SUCCESS)
+        {
+            std::cout << " Error dont create cairo of surface" << std::endl;
+            cairo_surface_destroy(surface);
+        }
+    }
+}
+
+CreatePDF::~CreatePDF()
+{
+    cairo_destroy(ctx);
+    cairo_surface_destroy(surface);
+}
