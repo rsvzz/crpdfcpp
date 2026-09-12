@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace controls
+namespace Controls
 {
 
     class CreatePDF
@@ -19,6 +19,10 @@ namespace controls
     public:
         CreatePDF(string _path, double _width, double _height);
         ~CreatePDF();
+
+        cairo_t* get_context();
+        cairo_surface_t* get_surface();
+        
     };
 
 }

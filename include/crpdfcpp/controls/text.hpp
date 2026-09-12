@@ -1,16 +1,15 @@
 #pragma once
-#include <crpdfcpp/point.hpp>
-#include <crpdfcpp/limit.hpp>
+#include <crpdfcpp/base_ct.hpp>
 #include <crpdfcpp/controls/draw_pdf.hpp>
 
 #include <string>
 using namespace std;
 using namespace ParamArgs;
 
-namespace controls
+namespace Controls
 {
 
-    class Text : public Point, public Limit, public DrawPdf
+    class Text : public BaseCT, public DrawPdf
     {
     private:
         /* data */

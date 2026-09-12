@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-using namespace controls;
+using namespace Controls;
 
 CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), height(h)
 {

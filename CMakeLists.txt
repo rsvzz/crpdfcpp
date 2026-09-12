@@ -9,12 +9,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(DIR_MODEL_FILES_CPP 
 "src/model/point.cpp"
 "src/model/limit.cpp"
+"src/model/base_ct.cpp"
 #"src/model/controls/draw_pdf.cpp" #dont need only .hpp
 "src/model/controls/create_pdf.cpp"
 "src/model/controls/text.cpp"
 "src/model/wrapper/point_wrapper.cpp"
 "src/model/wrapper/limit_wrapper.cpp"
 "src/model/wrapper/text_wrapper.cpp"
+"src/model/wrapper/base_ct_wrapper.cpp"
+"src/model/wrapper/create_pdf_wrapper.cpp"
 )
 
 #C native

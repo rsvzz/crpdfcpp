@@ -1,8 +1,8 @@
 #ifndef TEXT_WRAPPER_H
 #define TEXT_WRAPPER_H
 
-#include <crpdfcpp/wrapper/point_wrapper.h>
-#include <crpdfcpp/wrapper/limit_wrapper.h>
+#include <crpdfcpp/wrapper/base_ct_wrapper.h>
+#include <cairo/cairo.h>
 
 #ifdef __cplusplus
 extern "C"
@@ -11,14 +11,13 @@ extern "C"
     typedef struct texthandle TextHandle;
 
     TextHandle *text_create(const char *, double w, double h, double x, double y);
-    /// @brief get ptr for PointHandle of TextHandle
-    /// @param
-    /// @return PointHandle*
-    PointHandle *text_get_point(TextHandle *);
-    /// @brief get ptr for LimitHandle of TextHandle
-    /// @param
-    /// @return
-    LimitHandle *text_get_limit(TextHandle *);
+    /// @brief 
+    /// @param  
+    /// @param  
+    void text_draw(TextHandle*, cairo_t*);
+
+    BaseHandle* text_get_base(TextHandle*);
+    
     const char *text_get_label(TextHandle *);
     /// @brief Free *ptr
     /// @param  LimitHandle*

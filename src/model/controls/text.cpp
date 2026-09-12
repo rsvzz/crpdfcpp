@@ -1,9 +1,10 @@
 #include <crpdfcpp/controls/text.hpp>
 #include <cairo/cairo-pdf.h>
 
-using namespace controls;
+using namespace Controls;
+using namespace ParamArgs;
 
-Text::Text(string _label, double w, double h, double x, double y): Limit(w, h), Point(x, y){
+Text::Text(string _label, double w, double h, double x, double y): BaseCT(w, h, x, y){
     label = _label;
 }
 
