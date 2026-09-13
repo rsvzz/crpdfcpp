@@ -4,7 +4,7 @@ namespace ParamArgs
 {
     class Point
     {
-    private:
+    protected:
         /* data */
         double x, y;
 

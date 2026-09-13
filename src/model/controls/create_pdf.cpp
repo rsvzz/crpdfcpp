@@ -24,6 +24,14 @@ CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), he
     }
 }
 
+cairo_t* CreatePDF::get_context(){
+    return this->ctx;
+}
+
+cairo_surface_t* CreatePDF::get_surface(){
+    return this->surface;
+}
+
 CreatePDF::~CreatePDF()
 {
     cairo_destroy(ctx);

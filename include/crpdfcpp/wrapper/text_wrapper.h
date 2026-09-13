@@ -10,7 +10,7 @@ extern "C"
 #endif
     typedef struct texthandle TextHandle;
 
-    TextHandle *text_create(const char *, double w, double h, double x, double y);
+    TextHandle *text_create(const char *,const char*, double, cairo_font_slant_t, cairo_font_weight_t, double w, double h, double x, double y);
     /// @brief 
     /// @param  
     /// @param  
