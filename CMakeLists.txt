@@ -13,11 +13,11 @@ set(DIR_MODEL_FILES_CPP
 #"src/model/controls/draw_pdf.cpp" #dont need only .hpp
 "src/model/controls/create_pdf.cpp"
 "src/model/controls/text.cpp"
-"src/model/wrapper/point_wrapper.cpp"
-"src/model/wrapper/limit_wrapper.cpp"
-"src/model/wrapper/text_wrapper.cpp"
-"src/model/wrapper/base_ct_wrapper.cpp"
-"src/model/wrapper/create_pdf_wrapper.cpp"
+"src/wrapper/point_wrapper.cpp"
+"src/wrapper/limit_wrapper.cpp"
+"src/wrapper/text_wrapper.cpp"
+"src/wrapper/base_ct_wrapper.cpp"
+"src/wrapper/create_pdf_wrapper.cpp"
 )
 
 #C native

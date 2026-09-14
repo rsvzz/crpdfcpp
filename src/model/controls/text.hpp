@@ -1,6 +1,6 @@
 #pragma once
-#include <crpdfcpp/base_ct.hpp>
-#include <crpdfcpp/controls/draw_pdf.hpp>
+#include "../base_ct.hpp"
+#include "draw_pdf.hpp"
 
 #include <string>
 using namespace std;

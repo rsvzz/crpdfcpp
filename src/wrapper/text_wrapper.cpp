@@ -1,5 +1,5 @@
-#include <crpdfcpp/wrapper/text_wrapper.h>
-#include <crpdfcpp/controls/text.hpp>
+#include "../../include/crpdfcpp/text_wrapper.h"
+#include "../model/controls/text.hpp"
 #include <string>
 
 using namespace Controls;

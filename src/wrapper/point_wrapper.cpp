@@ -1,5 +1,5 @@
-#include <crpdfcpp/wrapper/point_wrapper.h>
-#include <crpdfcpp/point.hpp>
+#include "../../include/crpdfcpp/point_wrapper.h"
+#include "../model/point.hpp"
 
 #
 using namespace ParamArgs;

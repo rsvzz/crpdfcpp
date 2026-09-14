@@ -1,5 +1,5 @@
-#include <crpdfcpp/wrapper/create_pdf_wrapper.h>
-#include <crpdfcpp/controls/create_pdf.hpp>
+#include "../../include/crpdfcpp/create_pdf_wrapper.h"
+#include "../model/controls/create_pdf.hpp"
 
 using namespace Controls;
 using namespace std;

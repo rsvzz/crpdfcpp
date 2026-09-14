@@ -1,6 +1,6 @@
 #pragma once
-#include <crpdfcpp/point.hpp>
-#include <crpdfcpp/limit.hpp>
+#include "point.hpp"
+#include "limit.hpp"
 
 using namespace ParamArgs;
 

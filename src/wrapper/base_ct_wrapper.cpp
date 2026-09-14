@@ -1,5 +1,5 @@
-#include <crpdfcpp/wrapper/base_ct_wrapper.h>
-#include <crpdfcpp/base_ct.hpp>
+#include "../../include/crpdfcpp/base_ct_wrapper.h"
+#include "../model/base_ct.hpp"
 
 extern "C"
 {
