@@ -1,8 +1,8 @@
-#ifndef BASE_CT_WRAPPER_H
-#define BASE_CT_WRAPPER_H
+#ifndef BASE_CT_H
+#define BASE_CT_H
 
-#include <crpdfcpp/wrapper/point_wrapper.h>
-#include <crpdfcpp/wrapper/limit_wrapper.h>
+#include "point.h"
+#include "limit.h"
 #ifdef __cplusplus
 extern "C" {
 #endif

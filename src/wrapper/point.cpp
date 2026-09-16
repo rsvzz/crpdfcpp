@@ -1,4 +1,4 @@
-#include "../../include/crpdfcpp/point_wrapper.h"
+#include "../../include/crpdfcpp/point.h"
 #include "../model/point.hpp"
 
 #

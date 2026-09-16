@@ -1,4 +1,4 @@
-#include "../../include/crpdfcpp/text_wrapper.h"
+#include "../../include/crpdfcpp/text.h"
 #include "../model/controls/text.hpp"
 #include <string>
 

@@ -1,7 +1,7 @@
 #ifndef TEXT_WRAPPER_H
 #define TEXT_WRAPPER_H
 
-#include <crpdfcpp/wrapper/base_ct_wrapper.h>
+#include "base_ct.h"
 #include <cairo/cairo.h>
 
 #ifdef __cplusplus
@@ -9,7 +9,17 @@ extern "C"
 {
 #endif
     typedef struct texthandle TextHandle;
-
+    /// @brief new obj
+    /// @param label_name show
+    /// @param font family
+    /// @param font slant
+    /// @param font weight
+    /// @param font size
+    /// @param w width
+    /// @param h height
+    /// @param x (x,)
+    /// @param y ( , y)
+    /// @return TextHandle*
     TextHandle *text_create(const char *,const char*, double, cairo_font_slant_t, cairo_font_weight_t, double w, double h, double x, double y);
     /// @brief 
     /// @param  

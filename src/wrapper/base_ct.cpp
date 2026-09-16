@@ -1,4 +1,4 @@
-#include "../../include/crpdfcpp/base_ct_wrapper.h"
+#include "../../include/crpdfcpp/base_ct.h"
 #include "../model/base_ct.hpp"
 
 extern "C"

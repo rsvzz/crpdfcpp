@@ -1,8 +1,8 @@
 #include <iostream>
-#include <crpdfcpp/wrapper/text_wrapper.h>
-#include <crpdfcpp/wrapper/base_ct_wrapper.h>
-#include <crpdfcpp/wrapper/point_wrapper.h>
-#include <crpdfcpp/wrapper/create_pdf_wrapper.h>
+#include <crpdfcpp/text.h>
+#include <crpdfcpp/base_ct.h>
+#include <crpdfcpp/point.h>
+#include <crpdfcpp/create_pdf.h>
 
 // using namespace controls;
 
