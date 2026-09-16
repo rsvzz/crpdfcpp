@@ -1,9 +1,9 @@
-#include <crpdfcpp/controls/create_pdf.hpp>
+#include "create_pdf.hpp"
 #include <cairo/cairo-pdf.h>
 #include <string>
 #include <iostream>
 
-using namespace controls;
+using namespace Controls;
 
 CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), height(h)
 {
@@ -22,6 +22,14 @@ CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), he
             cairo_surface_destroy(surface);
         }
     }
+}
+
+cairo_t* CreatePDF::get_context(){
+    return this->ctx;
+}
+
+cairo_surface_t* CreatePDF::get_surface(){
+    return this->surface;
 }
 
 CreatePDF::~CreatePDF()

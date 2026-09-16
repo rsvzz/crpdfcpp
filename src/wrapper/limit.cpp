@@ -1,5 +1,5 @@
-#include <crpdfcpp/wrapper/limit_wrapper.h>
-#include <crpdfcpp/limit.hpp>
+#include "../../include/crpdfcpp/limit.h"
+#include "../model/limit.hpp"
 #include <iostream>
 
 using namespace ParamArgs;
