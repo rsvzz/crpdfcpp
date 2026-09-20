@@ -8,6 +8,13 @@
 extern "C"
 {
 #endif
+    typedef enum font_slant{
+        FONT_SLANT_NORMAL,
+        FONT_SLANT_ITALIC,
+        FONT_SLANT_OBLIQUE
+    } FontSlant;
+
+
     typedef struct texthandle TextHandle;
     /// @brief new obj
     /// @param label_name show

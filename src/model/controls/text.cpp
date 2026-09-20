@@ -17,7 +17,7 @@ Text::~Text() {}
 
 void Text::draw(cairo_t *ctx)
 {
-    cairo_select_font_face(ctx, this->font_family.c_str(), CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+    cairo_select_font_face(ctx, this->font_family.c_str(), font_slant, font_weight);
     cairo_set_font_size(ctx, this->font_size);
     cairo_set_source_rgb(ctx, 0.0, 0.0, 0.0); // Color negro
     cairo_move_to(ctx, this->x, this->y);              // Posición (x, y)
