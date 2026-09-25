@@ -9,10 +9,12 @@ set(DIR_MODEL_FILES_CPP
 "src/model/base_ct.cpp"
 "src/model/controls/create_pdf.cpp"
 "src/model/controls/text.cpp"
+"src/model/controls/line.cpp"
+"src/wrapper/base_ct.cpp"
 "src/wrapper/point.cpp"
 "src/wrapper/limit.cpp"
 "src/wrapper/text.cpp"
-"src/wrapper/base_ct.cpp"
+"src/wrapper/line.cpp"
 "src/wrapper/create_pdf.cpp"
 )
 

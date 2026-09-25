@@ -8,12 +8,6 @@
 extern "C"
 {
 #endif
-    typedef enum font_slant{
-        FONT_SLANT_NORMAL,
-        FONT_SLANT_ITALIC,
-        FONT_SLANT_OBLIQUE
-    } FontSlant;
-
 
     typedef struct texthandle TextHandle;
     /// @brief new obj
@@ -37,7 +31,7 @@ extern "C"
     
     const char *text_get_label(TextHandle *);
     /// @brief Free *ptr
-    /// @param  LimitHandle*
+    /// @param  TextHandle*
     void text_free(TextHandle *);
 #ifdef __cplusplus
 }
