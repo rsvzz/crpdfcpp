@@ -20,6 +20,10 @@ void crpdf_free(CrPdfHandel*);
 /// @param  
 void crpdf_cairo_surface_free(CrPdfHandel*);
 
+/// @brief new page for surface
+/// @param  ptr
+void crpdf_cairo_surface_new_page(CrPdfHandel*);
+
 #ifdef __cplusplus
 }
 #endif

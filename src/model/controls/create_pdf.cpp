@@ -16,6 +16,7 @@ CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), he
     else
     {
         ctx = cairo_create(surface);
+        printf("cairo context create for surface \n");
         if (cairo_status(ctx) != CAIRO_STATUS_SUCCESS)
         {
             std::cout << " Error dont create cairo of surface" << std::endl;
@@ -40,4 +41,12 @@ cairo_surface_t* CreatePDF::get_surface(){
 void CreatePDF::cairo_surface_free(){
     cairo_destroy(this->ctx);
     cairo_surface_destroy(this->surface);
+}
+
+void CreatePDF::new_page_pdf(){
+    if (this->surface != nullptr){
+        cairo_surface_show_page(this->surface);
+        cairo_show_page(this->ctx);
+    }
+        
 }
