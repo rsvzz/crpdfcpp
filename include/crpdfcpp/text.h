@@ -8,6 +8,7 @@
 extern "C"
 {
 #endif
+
     typedef struct texthandle TextHandle;
     /// @brief new obj
     /// @param label_name show
@@ -30,7 +31,7 @@ extern "C"
     
     const char *text_get_label(TextHandle *);
     /// @brief Free *ptr
-    /// @param  LimitHandle*
+    /// @param  TextHandle*
     void text_free(TextHandle *);
 #ifdef __cplusplus
 }

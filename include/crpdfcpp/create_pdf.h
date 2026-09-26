@@ -16,6 +16,13 @@ CrPdfHandel* crpdf_create(const char*, double, double);
 
 cairo_t* crpdf_get_context(CrPdfHandel*);
 void crpdf_free(CrPdfHandel*);
+/// @brief cairo_t* and cairo_surface_t* free memory
+/// @param  
+void crpdf_cairo_surface_free(CrPdfHandel*);
+
+/// @brief new page for surface
+/// @param  ptr
+void crpdf_cairo_surface_new_page(CrPdfHandel*);
 
 #ifdef __cplusplus
 }

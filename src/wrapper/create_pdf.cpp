@@ -5,24 +5,44 @@ using namespace Controls;
 using namespace std;
 extern "C"
 {
-    CrPdfHandel* crpdf_create(const char* path, double width, double height)
+    CrPdfHandel *crpdf_create(const char *path, double width, double height)
     {
         std::string path_safe = path ? path : "";
-        CreatePDF *crpdf =  new CreatePDF(path_safe, width, height);
-        return reinterpret_cast<CrPdfHandel*>(crpdf);
+        CreatePDF *crpdf = new CreatePDF(path_safe, width, height);
+        return reinterpret_cast<CrPdfHandel *>(crpdf);
     }
 
-    cairo_t* crpdf_get_context(CrPdfHandel *ptr){
-           if (ptr == nullptr) return nullptr; // null
+    cairo_t *crpdf_get_context(CrPdfHandel *ptr)
+    {
+        if (ptr == nullptr)
+            return nullptr; // null
 
         CreatePDF *crpdf = reinterpret_cast<CreatePDF *>(ptr);
         return crpdf->get_context();
-    }   
+    }
 
-    void crpdf_free(CrPdfHandel *ptr){
-        if (ptr == nullptr) return; // null
+    void crpdf_free(CrPdfHandel *ptr)
+    {
+        if (ptr == nullptr)
+            return; // null
 
         CreatePDF *crpdf = reinterpret_cast<CreatePDF *>(ptr);
         delete crpdf;
+    }
+
+    void crpdf_cairo_surface_free(CrPdfHandel *ptr){
+          if (ptr == nullptr)
+            return; // null
+
+        CreatePDF *crpdf = reinterpret_cast<CreatePDF *>(ptr);
+        crpdf->cairo_surface_free();
+    }
+
+    void crpdf_cairo_surface_new_page(CrPdfHandel *ptr){
+          if (ptr == nullptr)
+            return; // null
+
+        CreatePDF *crpdf = reinterpret_cast<CreatePDF *>(ptr);
+        crpdf->new_page_pdf();
     }
 }

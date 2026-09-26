@@ -22,7 +22,8 @@ namespace Controls
 
         cairo_t* get_context();
         cairo_surface_t* get_surface();
-        
+        void cairo_surface_free();
+        void new_page_pdf();
     };
 
 }
