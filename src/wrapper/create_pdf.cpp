@@ -30,14 +30,6 @@ extern "C"
         delete crpdf;
     }
 
-    void crpdf_cairo_surface_free(CrPdfHandel *ptr){
-          if (ptr == nullptr)
-            return; // null
-
-        CreatePDF *crpdf = reinterpret_cast<CreatePDF *>(ptr);
-        crpdf->cairo_surface_free();
-    }
-
     void crpdf_cairo_surface_new_page(CrPdfHandel *ptr){
           if (ptr == nullptr)
             return; // null

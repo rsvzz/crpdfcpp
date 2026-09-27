@@ -26,26 +26,32 @@ CreatePDF::CreatePDF(string _pth, double w, double h) : path(_pth), width(w), he
 
 CreatePDF::~CreatePDF()
 {
+    if (this->ctx != nullptr)
+    {
+        cairo_destroy(this->ctx);
+    }
+
+    if (this->surface != nullptr)
+    {
+        cairo_surface_destroy(this->surface);
+    }
 }
 
-cairo_t* CreatePDF::get_context(){
+cairo_t *CreatePDF::get_context()
+{
     return this->ctx;
 }
 
-cairo_surface_t* CreatePDF::get_surface(){
+cairo_surface_t *CreatePDF::get_surface()
+{
     return this->surface;
 }
 
-/// @brief free cairo_t* and cairo_surface_t*
-void CreatePDF::cairo_surface_free(){
-    cairo_destroy(this->ctx);
-    cairo_surface_destroy(this->surface);
-}
-
-void CreatePDF::new_page_pdf(){
-    if (this->surface != nullptr){
+void CreatePDF::new_page_pdf()
+{
+    if (this->surface != nullptr)
+    {
         cairo_surface_show_page(this->surface);
         cairo_show_page(this->ctx);
     }
-        
 }
