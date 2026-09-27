@@ -24,7 +24,7 @@ int main()
     line_draw(line, cr);
     line_free(line);
     crpdf_cairo_surface_new_page(crpdf);
-    crpdf_cairo_surface_free(crpdf);
+    //crpdf_cairo_surface_free(crpdf);
     crpdf_free(crpdf);
 
     // printf("(%f, %f) and width = %f and height = %f \n", tx.get_x(), tx.get_y(), tx.get_width(), tx.get_height());

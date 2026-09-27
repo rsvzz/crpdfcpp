@@ -6,6 +6,7 @@
     c++ 17
     libcairo
     pkgconf or pkg-config
+    cmake >= 3.31
 
 ## Install
     make build
